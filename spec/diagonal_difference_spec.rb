@@ -3,10 +3,6 @@ require 'diagonal_difference'
 RSpec.describe 'diagonal_difference' do
   it 'returns 2' do
     a = [1, 2, 3, 4, 5, 6, 9, 8, 9]
-    # 1 2 3
-    # 4 5 6
-    # 9 8 9
-    # 15
     expect(diagonal_difference(a)).to eq 2
   end
 

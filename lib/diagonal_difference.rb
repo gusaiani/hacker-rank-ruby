@@ -4,6 +4,7 @@ def diagonal_difference(arr)
 
   first_diagonal_sum = *(0..dimension - 1).reduce(0) do |sum, element|
     index = element * dimension + element
+
     sum + arr[index]
   end
 
